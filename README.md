@@ -7,7 +7,6 @@ API RESTful para gerenciamento e venda de ingressos desenvolvida com Kotlin, Spr
 * Kotlin
 * Spring Boot 3 (Web, Data JPA, Validation)
 * PostgreSQL
-* Docker / Docker Compose
 * Gradle (Kotlin DSL)
 
 ## Arquitetura do Projeto

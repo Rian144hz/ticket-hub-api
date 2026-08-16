@@ -36,5 +36,9 @@ out/
 ### VS Code ###
 .vscode/
 
+### Local SDK / machine-specific ###
+local.properties
+app/local.properties
+
 ### Kotlin ###
 .kotlin

@@ -13,22 +13,22 @@ import java.math.BigDecimal
 import java.time.LocalDateTime
 
 @Entity
-@Table(name = "ingresso")
+@Table(name = "ingressos")
 class Ingresso(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null,
 
-    @Column(nullable = false)
+    @Column(name = "nomecomprador", nullable = false)
     val compradorNome: String = "",
 
-    @Column(nullable = false)
+    @Column(name = "compradorcpf", nullable = false)
     val compradorCpf: String = "",
 
-    @Column(nullable = false)
+    @Column(name = "valorpago", nullable = false)
     val valorPago: BigDecimal = BigDecimal.ZERO,
 
-    @Column(nullable = false)
+    @Column(name = "datacompra", nullable = false)
     val dataCompra: LocalDateTime = LocalDateTime.now(),
 
     @ManyToOne(fetch = FetchType.LAZY)

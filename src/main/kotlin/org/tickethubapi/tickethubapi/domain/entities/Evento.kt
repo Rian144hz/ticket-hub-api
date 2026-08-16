@@ -22,13 +22,13 @@ class Evento (
     @Column(nullable = false)
     var capacidadeTotal: Int = 0,
 
-    @Column(nullable = false)
+    @Column(name = "ingressos_disp", nullable = false)
     var ingressosDisponiveis: Int = 0,
 
     @Column(nullable = false)
     var preco: BigDecimal = BigDecimal.ZERO,
 
-    @Column(nullable = false)
+    @Column(name = "data", nullable = false)
     var data_hora: LocalDateTime = LocalDateTime.now(),
 
     ){
